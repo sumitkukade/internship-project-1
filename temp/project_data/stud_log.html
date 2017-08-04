@@ -1,0 +1,34 @@
+<!DOCTYPE html>            
+<html>            
+<head> <!-- www.techstrikers.com -->             
+        
+ <link rel="stylesheet" href="./code.css"/>
+<body >
+ <form method="post" action="student.py" ng-app="myapp" ng-controller="appCnt" name="myForm">
+<script src="./angular.min.js"></script>           
+ <script>            
+var app = angular.module('myapp', []);            
+    app.controller("appCnt", function ($scope,$http) { 
+	var url = "./json.txt";
+	$scope.names = ["New Application", "Editing", "Open"];
+        $scope.status=["","Bonafied","Fees Structure","No Dues"]
+	$http.get(url).then( function(response) {
+               $scope.chiarperson= response.data;
+   });
+});     
+     
+</script>
+
+Roll no:<br>
+<input type="number" name="number" ng-model="number" required>
+<span style="color:red" ng-show="myForm.number.$dirty && myForm.number.$invalid">
+<span ng-show="myForm.number.$error.required">number is required.</span>
+<span ng-show="myForm.number.$error.number">Invalid number address.</span>
+</span>
+<input type="submit"
+ ng-disabled="myForm.user.$dirty && myForm.user.$invalid ||  
+myForm.number.$dirty && myForm.number.$invalid" ng-click="count1 = count1 + 1" ng-init="count1=0" >
+<input type="reset" value="logout" ng-init="count1=0,number=-1">
+ </form>
+</body>
+</html>

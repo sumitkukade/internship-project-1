@@ -14,6 +14,33 @@ $( document ).ready(function() {
 				staff_login();
 
 		}); 
+		$("#signup_pin_gen").click(function(){
+				signup_pin();
+		}); 
+		$("#student-login-page").click(function(){
+				window.location="temp/student-login.html";	
+		}); 
+		$("#staff-login-page").click(function(){
+				window.location="temp/staff-login.html";	
+		}); 
+		$("#home-button").click(function(){
+				window.location="../index.html";
+		});
+		$("#back-button").click(function(){
+				window.location="../index.html";
+		});
+		$("#testttttttttttttttttttt").click(function(){
+				alert(window.location.hostname)
+		});
+		$("#click-here").click(function(){
+				window.location="login-successfull.html";
+		});
+		$("#already-have-pin-button").click(function(){
+				window.location="signup.html";
+		});
+		$("#login-page-button").click(function(){
+				window.location="student-login.html";
+		});
 
 
 
@@ -31,7 +58,7 @@ function login(){
 		if(validate_roll_no(student_rollno) && validate_student_passwd(student_passwd)){
 
 				$.post(
-								"http://localhost/index.py/login",
+								"http://"+window.location.hostname+"/index.py/login",
 								{data: JSON.stringify(request)}
 
 					  ).done(function(response) {
@@ -40,13 +67,13 @@ function login(){
 								window.location="login-successfull.html";
 						}
 						else{
-								alert(response);
+								status_msg('status-msg',response);
 						}
 				});
 
 		}
 		else{
-				alert("invalid rollno or password");
+				status_msg("status-msg","invalid rollno or password");
 		}
 
 }
@@ -68,7 +95,7 @@ function validate_student_passwd(student_passwd)
 {
 		if(student_passwd.length<6)
 		{
-				alert("password length should be greater than 5");
+				status_msg('status-msg',"password length should be greater than 5");
 				return false;
 		}
 		else
@@ -102,16 +129,25 @@ function validate_pin(){
 		{
 
 				$.post(
-								"http://localhost/index.py/validate_pin",
+								"http://"+window.location.hostname+"/index.py/validate_pin",
 								{data: JSON.stringify(request)}
 
 					  ).done(function(response) {
 						handle_response(response);
+						if(response == "new_password,success")
+						{
+								window.setTimeout(function(){
+
+
+										window.location="student-login.html"
+								}, 3000);
+
+						}
 				});
 
 		}
 		else{
-				alert("invalid rollno or password");
+				status_msg('status-msg',"invalid rollno or password");
 		}
 
 }
@@ -170,7 +206,7 @@ function forgot_password()
 				if(validate_roll_no(rollno))
 				{
 						$.post(
-										"http://localhost/index.py/forgot_password",
+										"http://"+window.location.hostname+"/index.py/forgot_password",
 										{data: JSON.stringify(request)}
 
 							  ).done(function(response) {
@@ -195,11 +231,12 @@ function get_forget_otp(){
 		var request = {};
 		request["rollno"] = rollno;
 		$.post(
-						"http://localhost/index.py/get_student_reset_code",
+						"http://"+window.location.hostname+"/index.py/get_student_reset_code",
 						{data: JSON.stringify(request)}
 
 			  ).done(function(response) {
-				alert(response);
+				status_msg('status-msg',response);
+				/*alert(response);*/
 		});
 
 
@@ -216,7 +253,7 @@ function signup_pin(){
 				if(validate_roll_no(rollno))
 				{
 						$.post(
-										"http://localhost/index.py/signup_pin_generator",
+										"http://"+window.location.hostname+"/index.py/signup_pin_generator",
 										{data: JSON.stringify(request)}
 
 							  ).done(function(response) {
@@ -227,17 +264,14 @@ function signup_pin(){
 								}
 								else
 								{
-									//	alert("invalid user");
+										alert("invalid user");
 								}
 
 
 						});
 
 
-
 				}
-
-
 		}
 }
 
@@ -248,25 +282,22 @@ function staff_login(){
 		request["username"] = staff_username;
 		request["password"] = staff_password;
 		$.post(
-						"http://localhost/index.py/staff_login",
+						"http://"+window.location.hostname+"/index.py/staff_login",
 						{data: JSON.stringify(request)}
 
 			  ).done(function(response) {
 				if(response == "True")
 				{
+						/*$.post("http://"+window.location.hostname+"/project_data/staff.py/index",{data: JSON.stringify(request)}).done(function(response){alert(response);});*/
+						/**/
 						window.location="staff-login-successfull.html"
 
 				}
 				else
 				{
-						alert("invalid user");
+						status_msg("status-msg",response);
 				}
-
-
 		});
-
-
-
 }
 function get_student_pin_link()
 {

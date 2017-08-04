@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <script type="text/javascript">
+
+      function SendData()
+      {
+      var UserName = document.getElementById("username").value;
+      var Password = document.getElementById("pwd").value;
+      alert(UserName);
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200)
+      {
+      document.getElementById("reponse").innerHTML =this.responseText;
+      }
+      };
+      xhttp.open("POST", "/HTML_Forms/project_data/myServer.py/MyServer", true);
+      xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+      xhttp.send("FormData="+UserName+" "+Password);
+      }
+    </script>
+  </head>
+<body>
+  <style type="text/css">
+  form{
+    margin: 2;
+    padding: 2em 0;
+    border:2px solid red;
+    }
+  </style>
+  <center>
+    <form>
+      <h1> User Login</h1>
+      <p> <b>UserName</b></p>
+      <input type="text" id="username" placeholder="Enter your username" requried><br>
+      <p> <b>Password</b><br></p>
+      <input type="password" id="pwd" placeholder="Enter the password" requried><br>
+      <button type="button" onclick="SendData()">Login</button>
+      <button type="button">Cancel</button>
+      <p id="reponse" > </p>
+    </form>
+    </center>
+  </body>
+</html>

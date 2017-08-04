@@ -1,0 +1,24 @@
+SUCC,Success,Success,Success
+ERR,Input is wrong!!!!,Error,Error
+Start,This Is Intiated State!!,This action is done by student!!!,This Action alredy done!!!
+ApplicationInitiated,First start your application process!!!,This action is done by student!!!,This Action alredy done!!!
+ApplicationFormPartiallyFilled,fill your form!!!,This action is done by student!!!,This Action alredy done!!!
+ApplicationFormFilled,Fill your form!!!,This action is done by student!!!,This Action alredy done!!!
+ApplicationSubmitted,Fill your form fully!!!,This action is done by staff!!!,This Action alredy done!!!
+RequestArrivedInOffice,form is not submitted yet!!!,This action is done by staff!!!,This Action alredy done!!!
+FormPrinted,from is not arrived in office,This action is done by staff!!!,This Action alredy done!!!
+FormSigned,Form is not printed yet!!!,This action is done by staff!!!,This Action alredy done!!!
+SignedFormArrivedInOffice,form is signed yet!!!,This action is done by staff!!!,This Action alredy done!!!
+CertificateCollectedByStudent,Signed Form is not arrived in office!!!,This action is done by staff!!!,This Action alredy done!!!
+ApplicationRejectedByOffice,your application is rejected!!!,This action is done by staff!!!,This Action alredy done!!!
+RequestFinishedSuccessfully,form is not suucessfully finish!!!,This action is done by staff!!!,This Action alredy done!!!
+RequestFisnishedWithError,form have Error!!!,This action is done by staff!!!,This Action alredy done!!!
+applicationProcessByStaff,Input is Wrong!!!,access denied!!!,Error!!
+applicationRequests,Input is Wrong!!!,access denied!!!,Error!!!
+changePassword,Error!!!,Error!!!,Error!!!
+requestStateTransitions,Input Is wrong!!!,access denied!!!,Error!!!
+applicationCodeBySystem,Input Is wrong!!!,access denied!!!,Error!!!
+userforgetPassword,Input Is wrong!!!,access denied!!!,Error!!!
+getApplicationCode,Input Is wrong!!!,access denied!!!,Error!!!
+applicationForm,Input Is wrong!!!,access denied!!!,Error!!!
+Finish,finish!!!,application limit is exceeds!!!,This Action alredy done!!!

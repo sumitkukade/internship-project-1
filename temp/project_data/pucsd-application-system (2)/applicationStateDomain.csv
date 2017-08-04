@@ -1,0 +1,16 @@
+Start
+ApplicationInitiated
+ApplicationFormPartiallyFilled
+ApplicationFormFilled
+ApplicationSubmitted
+RequestArrivedInOffice
+ApplicationModification
+ModificationSuccessfully
+FormPrinted
+FormSigned
+SignedFormArrivedInOffice
+CertificateCollectedByStudent
+ApplicationRejectedByOffice
+RequestFinishedSuccessfully
+RequestFisnishedWithError
+Finish

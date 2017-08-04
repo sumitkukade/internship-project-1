@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./code.css"/>
+    <form ng-app="myapp" ng-controller="appController" name="form" >
+    <script src="angular.min.js"></script>
+    <script type="text/javascript">
+
+      function SendData()
+      {
+      var Purpose = document.getElementById("pr").value;
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200)
+      {
+      document.getElementById("reponse").innerHTML =this.responseText;
+      }
+      };
+      xhttp.open("POST", "/HTML_Forms/project_data/myServer1.py/MyServer", true);
+      xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+      xhttp.send("FormData="+Purpose);
+      }
+    </script>
+<body>
+ <script>
+     var app = angular.module('myapp', []);
+       app.controller("appController", function ($scope,$http) {
+       
+        $scope.purposes = ['A',
+         'B',
+         'C',
+         'D',
+         'E',
+         'F',
+         'Other'
+        ];
+     });
+</script>
+  </head>
+  </style>
+  <center>
+    <form>
+      <h1> Purpose</h1>
+      <p> <b>Purpose:</b></p>
+      <div  ng-repeat="purpose in purposes">
+         <input type="radio" id="pr" ng-model="$parent.purpose"  ng-value="purpose" name="purp"/> {{purpose}} </div>
+         <label > You have selected: {{purpose}}<br></label>
+            <div ng-if = "'Other'==purpose">
+               <label> Enter your purpose:</label>
+               <input type="text" id="pr" style="width:200px;height:10px;" name="purp" ng-model="purp" maxlength="30">
+               <h1 ng-if="!form.purp.$valid">The value is too long</h1>
+            </div>
+           <button type="button" onclick="SendData()">Ok</button>
+      <button type="button">Cancel</button>
+      <p id="reponse" > </p>
+    </form>
+    </center>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>            
+<html>            
+<head> <!-- www.techstrikers.com -->             
+        
+ <link rel="stylesheet" href="./code.css"/>
+<body >
+ <form method="post" action="new_application_print.py" ng-app="myapp" ng-controller="appController" name="myForm">
+<script src="./angular.min.js"></script>           
+ <script>            
+var app = angular.module('myapp', []);            
+    app.controller("appController", function ($scope,$http) { 
+	var url = "./json.txt";
+	$scope.names = ["New Application", "Editing", "Open"];
+        $scope.status=["","Bonafide Certificate","Fees Structure Certificate","International Bonafide Certificate","No Dues Certificate"]
+	$http.get(url).then( function(response) {
+               $scope.chiarperson= response.data;
+   });
+});          
+</script>
+     <label>For student</label><br></br>
+    <label style="padding-left:0px;">Search as:</label>
+    <input ng-model="fname" style="width:80px;"><br></br>
+
+      <label>Select operation
+     <select ng-model="selectedop" ng-options="op for op in names"></select>
+         <div ng-if="selectedop=='New Application'">
+         <input type="submit" value="ok" onclick="new_application_print"><br><br>
+         </div><br><br>
+     <label>Status of previous application:</label>
+      <select ng-model="statuspa" ng-options="op for op in status"></select><br></br>
+      

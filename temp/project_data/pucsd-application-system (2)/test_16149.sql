@@ -1,0 +1,16 @@
+insert into inputRequests(requestTime,requestType,userId,tableId,params) values(NOW(),"insert","16149","applicationForm","APBN");
+insert into inputRequests(requestTime,requestType,userId,tableId,params) values(NOW(),"delete","16149","applicationForm","1");
+insert into inputRequests(requestTime,requestType,userId,tableId,params) values(NOW(),"insert","16149","applicationForm","APBN");
+insert into inputRequests(requestTime,requestType,userId,tableId,params) values(NOW(),"select","16149","applicationForm","APBN");
+insert into inputRequests(requestTime,requestType,userId,tableId,params) values(NOW(),"insert","16149","applicationRequests","APBN,start,ApplicationInitiated,bonafide Application,apply for bonafide Application");
+insert into inputRequests(requestTime,requestType,userId,tableId,params) values(NOW(),"insert","16149","applicationRequests","APBN,ApplicationInitiated,ApplicationFormPartiallyFilled,bonafide Application,apply for bonafide Application");
+insert into inputRequests(requestTime,requestType,userId,tableId,params) values(NOW(),"insert","16149","applicationRequests","APBN,ApplicationInitiated,ApplicationFormFilled,bonafide Application,apply for bonafide Application");
+insert into inputRequests(requestTime,requestType,userId,tableId,params) values(NOW(),"update","16149","applicationRequests","APBN,ApplicationInitiated,ApplicationFormFilled,ApplicationFormPartiallyFilled,ApplicationFormFilled,bonafide Application,apply for bonafide Application");
+insert into inputRequests(requestTime,requestType,userId,tableId,params) values(NOW(),"insert","16149","applicationRequests","APBN,ApplicationFormPartiallyFilled,ApplicationFormPartiallyFilled,bonafide Application,apply for bonafide Application");
+insert into inputRequests(requestTime,requestType,userId,tableId,params) values(NOW(),"delete","16149","applicationRequests","APBN,ApplicationFormPartiallyFilled,ApplicationFormPartiallyFilled,bonafide Application,apply for bonafide Application");
+insert into inputRequests(requestTime,requestType,userId,tableId,params) values(NOW(),"insert","16149","applicationRequests","APBN,ApplicationFormPartiallyFilled,ApplicationFormFilled,bonafide Application,apply for bonafide Application");
+insert into inputRequests(requestTime,requestType,userId,tableId,params) values(NOW(),"select","16149","applicationRequests","APBN");
+insert into inputRequests(requestTime,requestType,userId,tableId,params) values(NOW(),"insert","16149","applicationRequests","APBN,ApplicationFormFilled,ApplicationFormPartiallyFilled,bonafide Application,apply for bonafide Application");
+insert into inputRequests(requestTime,requestType,userId,tableId,params) values(NOW(),"insert","16149","applicationRequests","APBN,ApplicationFormFilled,ApplicationFormFilled,bonafide Application,apply for bonafide Application");
+insert into inputRequests(requestTime,requestType,userId,tableId,params) values(NOW(),"insert","16149","applicationRequests","APBN,ApplicationFormFilled,ApplicationSubmitted,bonafide Application,apply for bonafide Application");
+insert into inputRequests(requestTime,requestType,userId,tableId,params) values(NOW(),"insert","16149","applicationRequests","APBN,ApplicationFormFilled,ApplicationSubmitted,bonafide Application,apply for bonafide Application");

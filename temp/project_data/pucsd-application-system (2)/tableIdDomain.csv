@@ -1,0 +1,9 @@
+applicationRequests,1
+applicationRequestByStaff,2
+applicationForm,3
+requestStateTransitions,4
+applicationCodeBySystem,5
+userforgetPassword,6
+getApplicationCode,7
+changePassword,8
+userPassword,9

@@ -1,0 +1,54 @@
+<!DOCTYPE html>            
+<html>            
+<head>
+
+<link rel="stylesheet" href="./code.css"/>
+<body >
+ 
+<div ng-app="myapp" ng-controller="appController">
+<script src="./angular.min.js"></script>           
+<script>            
+var app = angular.module('myapp', []);            
+    app.controller("appController", function ($scope,$http) { 
+         $scope.purposes = ['A',
+                'B',
+                'C',
+                'D',
+                'E',
+                'F',
+                'Other'
+               ];
+	
+});          
+</script>
+<form method="post" action=new_application.py/for_bonafied>
+  	   	
+
+  	      <h1> Purpose</h1>
+  	   	<p> <b>Purpose:</b></p>
+  	     	<div  ng-repeat="purpose in purposes">
+  	     	  <input type="radio"  ng-model="$parent.purpose"  ng-value="purpose" name="purp"/>{{purpose}}     
+         	</div>
+               <div class="cls" ng-if = "'Other'==purpose" >
+           		<form method="post" action=new_application.py/for_bonafied>
+  	         	<label> Enter your purpose:</label>
+             		<input type="text" required=""  style="width:400px;height:20px;" name="doc" ng-model="purp" maxlength="30"><br></br>
+             		<input type="submit"  value="submit">
+                        </form>
+              </div>
+               <div class="cls" ng-if="'Other'!=purpose" >
+                   <form method="post" action=new_application.py/for_bonafied>
+                      <input type=submit value="submit">
+                  </form>
+              </div> 
+ </div>              	
+</body>
+</head>
+</html>
+
+
+
+
+
+
+

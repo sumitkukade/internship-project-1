@@ -1,0 +1,594 @@
+1,A&N Islands
+2,Car Nicobar
+3,Adilabad
+4,Anantapur
+5,Chittoor
+6,Cuddapah
+7,East Godavari
+8,Guntur
+9,Hyderabad
+10,Karimnagar
+11,Khammam
+12,Krishna
+13,Kurnool
+14,Mahboobnagar
+15,Medak
+16,Nalgonda
+17,Nellore
+18,Nizamabad
+19,Prakasam
+20,Ranga Reddy
+21,Srikakulam
+22,Vishakhapatnam
+23,Vizianagaram
+24,Warangal
+25,West Godavari
+26,Changlang
+27,Dibang Valley
+28,East Kameng
+29,East Siang
+30,Lohit
+31,Lower Subansiri
+32,Papum Pare
+33,Tirap
+34,Upper Siang
+35,Upper Subansiri
+36,West Kameng
+37,West Siang
+38,Barpeta
+39,Bongaigaon
+40,Chacher
+41,Darranga
+42,Dhemaji
+43,Dhubri
+44,Dibrugarh
+45,Goalpara
+46,Golaghat
+47,Hailakandi
+48,Jorhat
+49,Kamrup
+50,Karbi Anglong
+51,Karimganj
+52,Kokrajhar
+53,Lakhimpur
+54,Marigaon
+55,Nagaon
+56,Nalbari
+57,North Cacher Hills
+58,Sibsagar
+59,Sonitpur
+60,Tinsukia
+61,Araria
+62,Aurangabad
+63,Banka
+64,Begusarai
+65,Bhagalpur
+66,Bhojpur
+67,Buxar
+68,Darbhanga
+69,Gaya
+70,Gopalganj
+71,Jahanabad
+72,Jamui
+73,Kaimur
+74,Katihar
+75,Khagaria
+76,Kishanganj
+77,Lakhisarai
+78,Madhepura
+79,Madhubani
+80,Munger
+81,Muzaffarpur
+82,Nalanda
+83,Nawada
+84,Patna
+85,Purba Champaran
+86,Purnia
+87,Rohtas
+88,Saharsa
+89,Samastipur
+90,Saran
+91,Saupal
+92,Sheikhpura
+93,Sheohar
+94,Sitamarhi
+95,Siwan
+96,Vaishali
+97,West Champaran
+98,Chandigarh
+99,Bastar
+100,Bilaspur
+101,Dantewada
+102,Dhamtari
+103,Durg
+104,Janjgir - Champa
+105,Jashpur
+106,Kanker
+107,Kawardha
+108,Korba
+109,Koriya
+110,Mahasamund
+111,Raigarh
+112,Raipur
+113,Rajnandgaon
+114,Surguja
+115,Dadra & Nagar Haveli
+116,Daman
+117,Central Delhi
+118,East Delhi
+119,New Delhi
+120,North Delhi
+121,North East
+122,North West
+123,South Delhi
+124,South West
+125,West Delhi
+126,North Goa
+127,South Goa
+128,Ahmedabad
+129,Amreli
+130,Anand
+131,Banaskantha
+132,Bharuch
+133,Bhavnagar
+134,Dohad
+135,Gandhi Nagar
+136,Jamnagar
+137,Junagadh
+138,Kheda
+139,Kuchchh
+140,Mahesana
+141,Narmada
+142,Navsari
+143,Panchmahal
+144,Patan
+145,Porbandar
+146,Rajkot
+147,Sabarkantha
+148,Surat
+149,Surendranagar
+150,The Dangs
+151,Vadodara
+152,Valsad
+153,Ambala
+154,Bhiwani
+155,Faridabad
+156,Fatehabad
+157,Gurgaon
+158,Hissar
+159,Jhajjar
+160,Jind
+161,Kaithal
+162,Karnal
+163,Kurukshetra
+164,Mohindergarh
+165,Panchkula
+166,Panipat
+167,Rewari
+168,Rohtak
+169,Sirsa
+170,Sonepat
+171,Yamunanagar
+172,Bilaspur
+173,Chamba
+174,Hamirpur
+175,Kangra
+176,Kinnaur
+177,Kullu
+178,Lahul & Spiti
+179,Mandi
+180,Shimla
+181,Sirmour
+182,Solan
+183,Una
+184,Anantnag
+185,Badgam
+186,Baramulla
+187,Doda
+188,Jammu
+189,Kargil
+190,Kathua
+191,Kupwara
+192,Leh
+193,Poonch
+194,Pulwana
+195,Rajouri
+196,Srinagar
+197,Udhampur
+198,Bokaro
+199,Chatra
+200,Deoghar
+201,Dhanbad
+202,Dumka
+203,Giridih
+204,Grahwa
+205,Gumla
+206,Hazaribagh
+207,Kodarma
+208,Lohardaga
+209,Pakaur
+210,Palamu
+211,Paschimi Singhbhum
+212,Purbi Singbhum
+213,Ranchi
+214,Sahebganj
+215,Bagalkot
+216,Bangalore
+217,Belgaum
+218,Bellary
+219,Bidar
+220,Bijapur
+221,Chamarajanagar
+222,Chikamaglur
+223,Chikamangalur
+224,Chitradurga
+225,Dak. Kannada
+226,Davanagere
+227,Dharwar
+228,Gadag
+229,Gulbarga
+230,Hassan
+231,Haveri
+232,Koduru
+233,Kolar
+234,Koppal
+235,Mandya
+236,Mysore
+237,Raichur
+238,Shimoga
+239,Tumkur
+240,Udupi
+241,Uttar Kannada
+242,Alappuzha
+243,Ernakulam
+244,Iduki
+245,Kannur
+246,Kasargode
+247,Kollam
+248,Kottayam
+249,Kozhikode
+250,Malapuram
+251,Palakkad
+252,Pathanamthitta
+253,Thrissur
+254,Trivandrum
+255,Wayanad
+256,Kadarmath
+257,Kalpenthi
+258,Kavarathy
+259,Kiltan
+260,Minicoy
+261,Balaghat
+262,Barwani
+263,Betul
+264,Bhind
+265,Bhopal
+266,Chhatarpur
+267,Chhindwara
+268,Damoh
+269,Datia
+270,Dewas
+271,Dhar
+272,Dindori
+273,East Nimar
+274,Guna
+275,Gwalior
+276,Harda
+277,Hoshangabad
+278,Indore
+279,Jabalpur
+280,Jhabua
+281,Katni
+282,Mandasur
+283,Mandla
+284,Morena
+285,Narasinghpur
+286,Neemuch
+287,Panna
+288,Raigarh
+289,Raisen
+290,Ratlam
+291,Rewa
+292,Sagar
+293,Satna
+294,Sehore
+295,Seoni
+296,Shahdol
+297,Shajapur
+298,Shivpuri
+299,Sidhi
+300,Tikamgarh
+301,Ujjain
+302,Umaria
+303,Vidisha
+304,West Nimar
+305,Ahmednagar
+306,Akola
+307,Amraoti
+308,Aurangabad
+309,Beed
+310,Bhandara
+311,Buldhana
+312,Chandrapur
+313,Dhule
+314,Gadchiroli
+315,Gondia
+316,Hingoli
+317,Jalgaon
+318,Jalna
+319,Kolhapur
+320,Latur
+321,Mumbai
+322,Nagpur
+323,Nanded
+324,Nandurbar
+325,Nashik
+326,Osmanabad
+327,Parbhani
+328,Pune
+329,Raigarh
+330,Ratnagiri
+331,Sangli
+332,Satara
+333,Sholapur
+334,Sindhudurg
+335,Solapur
+336,Thane
+337,Wardha
+338,Washim
+339,Yeotamal
+340,BISHENPUR
+341,Bishenpur
+342,Chandel
+343,Churachandpur
+344,Imphal
+345,Senapati
+346,Tamenglong
+347,Thoubal
+348,Ukhrul
+349,East Garo Hills
+350,East Khasi Hills
+351,Jaintia Hills
+352,Ri Bhoi
+353,South Garo Hills
+354,West Garo Hills
+355,West Khasi Hills
+356,Aizwal
+357,Champhai
+358,Kolasib
+359,Lawngtlai
+360,Lungleh
+361,Saiha
+362,Sherchip
+363,Dimapur
+364,Kohima
+365,Mokokchung
+366,Mon
+367,Phek
+368,Tuengsang
+369,Wokha
+370,Zunehboto
+371,Anugul
+372,Baleshwar
+373,Bargarh
+374,Baudh
+375,Bhadrak
+376,Bolangir
+377,Cuttack
+378,Debagarh
+379,Dhenkanal
+380,Gajapati
+381,Ganjam
+382,Jagatsinghapur
+383,Jajapur
+384,Jharsuguda
+385,Kalahandi
+386,Kandhamal
+387,Kendrapara
+388,Kendujhar
+389,Koraput
+390,Kordha
+391,Malkangiri
+392,Mayurbhanj
+393,Nabarangapur
+394,Naupada
+395,Nayagarh
+396,Puri
+397,Rayagada
+398,Sambalpur
+399,Sonapur
+400,Sundargarh
+401,Karaikal
+402,Mahe
+403,Pondicherry
+404,Yanam
+405,Amritsar
+406,Bhatinda
+407,Faridkot
+408,Fatehgarh Sahib
+409,Ferozepur
+410,Gurdaspur
+411,Hoshiarpur
+412,Jalandhar
+413,Kapurthala
+414,Ludhiana
+415,Mansa
+416,Moga
+417,Muktsar
+418,Nawanshahr
+419,Patiala
+420,Rupnagar
+421,Sangrur
+422,Ajmer
+423,Alwar
+424,Banswara
+425,Baran
+426,Barmer
+427,Bharatpur
+428,Bhilwara
+429,Bikaner
+430,Bundi
+431,Chittorgarh
+432,Churu
+433,Dausa
+434,Dholpur
+435,Dungarpur
+436,Ganganagar
+437,Hanumangarh
+438,Jaipur
+439,Jaisalmer
+440,Jalore
+441,Jhalawar
+442,JhunJhunu
+443,Jodhpur
+444,Karauli
+445,Kota
+446,Nagaur
+447,Pali
+448,Rajsamand
+449,Sikar
+450,Sirohi
+451,Swaimadhopur
+452,Tonk
+453,Udaipur
+454,East Sikkim
+455,North Sikkim
+456,South Sikkim
+457,West Sikkim
+458,Ariyalur
+459,Chennai
+460,Coimbatore
+461,Cuddalore
+462,Dharmapuri
+463,Dindigul
+464,Erode
+465,Kancheepuram
+466,Kanyakumari
+467,Karur
+468,Madurai
+469,Nagapattinam
+470,Namakkal
+471,Perambalur
+472,Pudukottai
+473,Ramanathapuram
+474,Salem
+475,Sivaganga
+476,Thanjavur
+477,The Nilgiri
+478,Theni
+479,Thiruvallur
+480,Thiruvarur
+481,Thoothukkudi
+482,Tiruchirappalli
+483,Tirunelveli
+484,Tiruvallur
+485,Tiruvannamalai
+486,Vellore
+487,Viluppuram
+488,Virudhunagar
+489,Dhalai
+490,North Tripura
+491,South Tripura
+492,West Tripura
+493,Agra
+494,Aligarh
+495,Allahabad
+496,Ambedkar Nagar
+497,Auraiya
+498,Azamgarh
+499,Badaun
+500,Baghpat
+501,Bahraich
+502,Ballia
+503,Balrampur
+504,Banda
+505,Barabanki
+506,Bareilly
+507,Basti
+508,Bijnore
+509,Bulandshahr
+510,Chandauli
+511,Chitrakoot
+512,Deoria
+513,Etah
+514,Etwah
+515,Faizabad
+516,Farukhabad
+517,Fatehpur
+518,Firozabad
+519,Gautam Buddha Nagar
+520,Ghaziabad
+521,Ghazipur
+522,Gonda
+523,Gorakhpur
+524,Hamirpur
+525,Hardoi
+526,Hathras
+527,Jalaun
+528,Jaunpur
+529,Jhansi
+530,Jyotiba Phule Nagar
+531,Kannauj
+532,Kanpur
+533,Kaushambi
+534,Kheri
+535,Kushinagar
+536,Lalitpur
+537,Lucknow
+538,Mahoba
+539,Mahrajganj
+540,Mainpuri
+541,Mathura
+542,Mau
+543,Meerut
+544,Mirzapur
+545,Moradabad
+546,Muzaffarnagar
+547,Pilibhit
+548,Pratapgarh
+549,Raibareilly
+550,Rampur
+551,Saharanpur
+552,Sant Kabir Nagar
+553,Sant Ravidas Nagar Bhadohi
+554,Shahjahanpur
+555,Shrawasti
+556,Siddharthnagar
+557,Sitapur
+558,Sonbhadra
+559,Sultanpur
+560,Unnao
+561,Varanasi
+562,Almora
+563,Bageshwar
+564,Chamoli
+565,Champawat
+566,Dehradun
+567,Hardwar
+568,Nainital
+569,Pauri Garhwal
+570,Pithoragarh
+571,Rudra Prayag
+572,Tehri Garhwal
+573,Udham Singh Nagar
+574,Uttarkashi
+575,Bankura
+576,Bardhaman
+577,Birbhum
+578,Calcutta
+579,Coochbehar
+580,Dakshin Dinajpur
+581,Darjeeling
+582,Hooghly
+583,Howrah
+584,Jalpaiguri
+585,Malda
+586,Medinipur
+587,Midnapur
+588,Murshidabad
+589,Nadiad,West Bengal
+590,North 24 Parganas
+591,Purulia
+592,South 24 Parganas
+593,Uttar Dinajpur
+594,West Dinajpur

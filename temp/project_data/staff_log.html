@@ -1,0 +1,30 @@
+<!DOCTYPE html>            
+<html>            
+<head> <!-- www.techstrikers.com -->             
+        
+ <link rel="stylesheet" href="./code.css"/>
+<body >
+ <form method="post" action="staff.py" ng-app="myapp" ng-controller="appController" name="myForm">
+<script src="./angular.min.js"></script>           
+ <script>            
+var app = angular.module('myapp', []);            
+    app.controller("appController", function ($scope,$http) { 
+	var url = "./json.txt";
+	$scope.names = ["new application", "editing", "open"];
+        $scope.status=["","bonafied","fees structure","no dues"]
+	$http.get(url).then( function(response) {
+               $scope.chiarperson= response.data;
+   });
+});     
+     
+</script>
+
+staff name:<br>
+<input type="text" name="number" ng-model="number" required>
+<input type="submit"
+ ng-disabled="myForm.user.$dirty && myForm.user.$invalid ||  
+myForm.number.$dirty && myForm.number.$invalid" ng-click="count1 = count1 + 1" ng-init="count1=0" >
+<input type="reset" value="logout" ng-init="count1=0,number=-1">
+ </form>
+</body>
+</html>

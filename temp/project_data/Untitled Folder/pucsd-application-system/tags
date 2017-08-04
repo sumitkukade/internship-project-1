@@ -1,0 +1,112 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+applicationDescResult	applicationDesc.sql	/^CREATE TABLE applicationProcess.applicationDescResult ($/;"	t
+applicationDescResult.isResult	applicationDesc.sql	/^  isResult boolean$/;"	F
+applicationDescString	applicationDesc.sql	/^CREATE PROCEDURE applicationProcess.applicationDescString(IN line text)$/;"	p
+applicationForm	form-detail.sql	/^CREATE TABLE applicationForm ($/;"	t
+applicationForm.appId	form-detail.sql	/^  appId varchar(5) NOT NuLL,$/;"	F
+applicationForm.requestId	form-detail.sql	/^  requestId bigint NOT NULL,$/;"	F
+applicationForm.rollNumber	form-detail.sql	/^  rollNumber varchar(15) NOT NULL,$/;"	F
+applicationForm.triggerFormDetails	form-detail.sql	/^CREATE TRIGGER applicationProcess.triggerFormDetails after update on applicationProcess.applicationForm$/;"	T
+applicationFormDelete.triggerdeleteApplicationForm	form-detail.sql	/^CREATE TRIGGER applicationProcess.triggerdeleteApplicationForm after insert on applicationProcess.applicationFormDelete$/;"	T
+applicationRequestByStaff.triggerApplicationRequestByStaff	applicationRequestProcessByStaff.sql	/^CREATE TRIGGER applicationProcess.triggerApplicationRequestByStaff after insert on applicationRequestByStaff$/;"	T
+applicationRequests.insertInRequestStateTransitions	applicationRequestStateTransitionsProcess.sql	/^CREATE TRIGGER applicationProcess.insertInRequestStateTransitions after insert on applicationProcess.applicationRequests$/;"	T
+applicationResult	validation-application.sql	/^CREATE TABLE applicationProcess.applicationResult ($/;"	t
+applicationResult.isResult	validation-application.sql	/^  isResult boolean$/;"	F
+applicationString	validation-application.sql	/^CREATE PROCEDURE applicationProcess.applicationString(IN line text)$/;"	p
+aux_applicationRequestsDelete.triggerForDelete	application-request-fordelete.sql	/^CREATE TRIGGER applicationProcess.triggerForDelete after insert on applicationProcess.aux_applicationRequestsDelete$/;"	T
+aux_applicationRequestsUpdate.triggerForUpdate	application-request-forupdate.sql	/^CREATE TRIGGER applicationProcess.triggerForUpdate after insert on applicationProcess.aux_applicationRequestsUpdate$/;"	T
+aux_studentApplicationCount	applicationRequestStateTransitionsProcess.sql	/^CREATE TABLE aux_studentApplicationCount ($/;"	t
+aux_studentApplicationCount.appCnt	applicationRequestStateTransitionsProcess.sql	/^  appCnt integer NOT NULL,$/;"	F
+aux_studentApplicationCount.appId	applicationRequestStateTransitionsProcess.sql	/^  appId varchar(5) NOT NULL,$/;"	F
+aux_studentApplicationCount.requestId	applicationRequestStateTransitionsProcess.sql	/^  requestId bigint NOT NULL,$/;"	F
+aux_studentApplicationCount.rollNumber	applicationRequestStateTransitionsProcess.sql	/^  rollNumber varchar(15) NOT NULL,$/;"	F
+bonafideApplicationForm	form-detail.sql	/^CREATE TABLE bonafideApplicationForm ($/;"	t
+bonafideApplicationForm.CourseName	form-detail.sql	/^  CourseName varchar(3) NOT NULL,$/;"	F
+bonafideApplicationForm.adderessLine1	form-detail.sql	/^  adderessLine1 varchar(50) NOT NULL,$/;"	F
+bonafideApplicationForm.adderessLine2	form-detail.sql	/^  adderessLine2 varchar(50) NOT NULL,$/;"	F
+bonafideApplicationForm.adderessLine3	form-detail.sql	/^  adderessLine3 varchar(50) NOT NULL,$/;"	F
+bonafideApplicationForm.currDate	form-detail.sql	/^  currDate date NOT NULL$/;"	F
+bonafideApplicationForm.dateOfBirth	form-detail.sql	/^  dateOfBirth date NOT NULL,$/;"	F
+bonafideApplicationForm.fname	form-detail.sql	/^  fname text NOT NULL,$/;"	F
+bonafideApplicationForm.lname	form-detail.sql	/^  lname text NOT NULL,$/;"	F
+bonafideApplicationForm.mname	form-detail.sql	/^  mname text,$/;"	F
+bonafideApplicationForm.rollNumber	form-detail.sql	/^  rollNumber varchar(15) NOT NULL,$/;"	F
+bonafideApplicationForm.year	form-detail.sql	/^  year varchar(1) NOT NULL,$/;"	F
+feesStructureForm	form-detail.sql	/^CREATE TABLE feesStructureForm ($/;"	t
+feesStructureForm.Total	form-detail.sql	/^   Total integer NOT NULL,$/;"	F
+feesStructureForm.courseId	form-detail.sql	/^   courseId varchar(3) NOT NULL,$/;"	F
+feesStructureForm.currdate	form-detail.sql	/^   currdate date NOT NULL$/;"	F
+feesStructureForm.fname	form-detail.sql	/^   fname text NOT NULL,$/;"	F
+feesStructureForm.labFee	form-detail.sql	/^   labFee integer NOT NULL,$/;"	F
+feesStructureForm.lname	form-detail.sql	/^   lname text NOT NULL,$/;"	F
+feesStructureForm.mname	form-detail.sql	/^   mname text,$/;"	F
+feesStructureForm.otherFee	form-detail.sql	/^   otherFee integer NOT NULL,$/;"	F
+feesStructureForm.rollNumber	form-detail.sql	/^   rollNumber varchar(15) NOT NULL,$/;"	F
+feesStructureForm.semId	form-detail.sql	/^   semId varchar(1) NOT NULL,$/;"	F
+feesStructureForm.tutionFee	form-detail.sql	/^   tutionFee integer NOT NULL,$/;"	F
+inputRequests	user-input.sql	/^CREATE TABLE inputRequests ($/;"	t
+inputRequests.insertInApplicationRequest	applicationRequestProcess.sql	/^CREATE TRIGGER userInputDatabase.insertInApplicationRequest after insert on userInputDatabase.inputRequests$/;"	T
+inputRequests.params	user-input.sql	/^  params text,$/;"	F
+inputRequests.requestId	user-input.sql	/^  requestId bigint primary key auto_increment,$/;"	F
+inputRequests.requestTime	user-input.sql	/^  requestTime timestamp NOT NULL,$/;"	F
+inputRequests.requestType	user-input.sql	/^  requestType varchar(6) NOT NULL,$/;"	F
+inputRequests.tableId	user-input.sql	/^  tableId varchar(50) NOT NULL,$/;"	F
+inputRequests.userId	user-input.sql	/^  userId long NOT NULL,$/;"	F
+insertInFeeStructure	form-detail.sql	/^CREATE PROCEDURE applicationProcess.insertInFeeStructure(IN rollnumber varchar(15), IN fname text,IN mname text,IN lname text,IN course varchar(5),IN studentDomain int,IN categoryId varchar(5))$/;"	p
+interNationalBonafideApplicationForm	form-detail.sql	/^CREATE TABLE interNationalBonafideApplicationForm ($/;"	t
+interNationalBonafideApplicationForm.acadmiYear	form-detail.sql	/^  acadmiYear varchar(1) NOT NULL,$/;"	F
+interNationalBonafideApplicationForm.contactNo	form-detail.sql	/^  contactNo varchar(10) NOT NULL,$/;"	F
+interNationalBonafideApplicationForm.courseName	form-detail.sql	/^  courseName varchar(3) NOT NULL,$/;"	F
+interNationalBonafideApplicationForm.currDate	form-detail.sql	/^  currDate date NOT NULL,$/;"	F
+interNationalBonafideApplicationForm.dateOfFirst	form-detail.sql	/^  dateOfFirst date NOT NULL,$/;"	F
+interNationalBonafideApplicationForm.fname	form-detail.sql	/^  fname text NOT NULL,$/;"	F
+interNationalBonafideApplicationForm.issuedOn	form-detail.sql	/^  issuedOn date NOT NULL,$/;"	F
+interNationalBonafideApplicationForm.lname	form-detail.sql	/^  lname text NOT NULL,$/;"	F
+interNationalBonafideApplicationForm.mname	form-detail.sql	/^  mname text,$/;"	F
+interNationalBonafideApplicationForm.nationality	form-detail.sql	/^  nationality text NOT NULL,$/;"	F
+interNationalBonafideApplicationForm.passportNo	form-detail.sql	/^  passportNo text NOT NULL,$/;"	F
+interNationalBonafideApplicationForm.passportValidTill	form-detail.sql	/^  passportValidTill date NOT NULL,$/;"	F
+interNationalBonafideApplicationForm.rollNumber	form-detail.sql	/^  rollNumber varchar(15) NOT NULL,$/;"	F
+interNationalBonafideApplicationForm.semId	form-detail.sql	/^  semId varchar(1) NOT NULL,$/;"	F
+interNationalBonafideApplicationForm.stayVisaUpTo	form-detail.sql	/^  stayVisaUpTo date NOT NULL$/;"	F
+interNationalBonafideApplicationForm.studentAddrInCity	form-detail.sql	/^  studentAddrInCity text NOT NULL,$/;"	F
+interNationalBonafideApplicationForm.visaIssuedOn	form-detail.sql	/^  visaIssuedOn date NOT NULL,$/;"	F
+interNationalBonafideApplicationForm.visaNo	form-detail.sql	/^  visaNo text NOT NULL,$/;"	F
+interNationalBonafideApplicationForm.visaType	form-detail.sql	/^  visaType text NOT NULL,$/;"	F
+interNationalBonafideApplicationForm.visaValidTill	form-detail.sql	/^  visaValidTill date NOT NULL,$/;"	F
+noDuesFormDateForm	form-detail.sql	/^CREATE TABLE noDuesFormDateForm ($/;"	t
+noDuesFormDateForm.CourseName	form-detail.sql	/^  CourseName varchar(3) NOT NULL,$/;"	F
+noDuesFormDateForm.fname	form-detail.sql	/^  fname text NOT NULL,$/;"	F
+noDuesFormDateForm.gender	form-detail.sql	/^  gender varchar(1) NOT NULL$/;"	F
+noDuesFormDateForm.lname	form-detail.sql	/^  lname text NOT NULL,$/;"	F
+noDuesFormDateForm.mname	form-detail.sql	/^  mname text,$/;"	F
+noDuesFormDateForm.rollNumber	form-detail.sql	/^  rollNumber varchar(15) NOT NULL,$/;"	F
+outputErrorMsgs	user-input.sql	/^CREATE TABLE outputErrorMsgs ($/;"	t
+outputErrorMsgs.msg	user-input.sql	/^  msg text,$/;"	F
+outputErrorMsgs.msgId	user-input.sql	/^  msgId varchar(30),$/;"	F
+outputErrorMsgs.requestId	user-input.sql	/^  requestId bigint,$/;"	F
+outputErrorMsgs.timet	user-input.sql	/^  timet timestamp,$/;"	F
+outputResults	user-input.sql	/^CREATE TABLE outputResults ($/;"	t
+outputResults.output	user-input.sql	/^  output longtext,$/;"	F
+outputResults.requestId	user-input.sql	/^  requestId bigint,$/;"	F
+outputResults.timet	user-input.sql	/^  timet timestamp,$/;"	F
+procedureResult	validation-string.sql	/^CREATE TABLE procedureResult ($/;"	t
+procedureResult.isResult	validation-string.sql	/^  isResult boolean$/;"	F
+requestResult	validation-requestState.sql	/^CREATE TABLE applicationProcess.requestResult ($/;"	t
+requestResult.isResult	validation-requestState.sql	/^  isResult boolean$/;"	F
+requestString	validation-requestState.sql	/^CREATE PROCEDURE applicationProcess.requestString(IN line text)$/;"	p
+split_str	split-str.sql	/^Create Function split_str ($/;"	f
+t1	form-detail.sql	/^create table t1(a text,b text,c text);$/;"	t
+t1.a	form-detail.sql	/^create table t1(a text,b text,c text);$/;"	F
+t1.b	form-detail.sql	/^create table t1(a text,b text,c text);$/;"	F
+t1.c	form-detail.sql	/^create table t1(a text,b text,c text);$/;"	F
+u	applicationRequestProcess.sql	/^create table u(a text,b text);$/;"	t
+u.a	applicationRequestProcess.sql	/^create table u(a text,b text);$/;"	F
+u.b	applicationRequestProcess.sql	/^create table u(a text,b text);$/;"	F
+validateUpdatedString	requeststate-string.sql	/^CREATE PROCEDURE applicationProcess.validateUpdatedString(IN line text)$/;"	p
+validatingString	validation-string.sql	/^CREATE PROCEDURE applicationProcess.validatingString(IN line text)$/;"	p

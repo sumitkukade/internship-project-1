@@ -1,0 +1,43 @@
+<!DOCTYPE html>            
+<html>            
+<head>
+           
+ <link rel="stylesheet" href="./code.css"/>
+<body >
+ <form ng-app="myapp" ng-controller="appController" name="myForm" >
+
+<script src="./angular.min.js">
+
+
+</script>
+ <script src="./print.js"></script>
+<script type="text/javascript">
+function load()
+{
+setTimeout("window.open(self.location, '_self');", 10000);
+}
+</script>
+ <script>            
+var app = angular.module('myapp', []);            
+    app.controller("appController", function ($scope,$http) { 
+	var url = "./json.txt";
+	$http.get(url).then( function(response) {
+               $scope.chiarperson= response.data;
+$scope.ststs=['start -ApplicationInitiated', 'ApplicationInitiated-ApplicationFormPartiallyFilled', 'ApplicationInitiated-ApplictionFormFilled', 'ApplicationFormPartiallyFilled-ApplicationFormPartiallyFilled', 'ApplicationFormPartiallyFilled-ApplictionFormFilled', 'ApplictionFormFilled-ApplicationFormPartiallyFilled', 'ApplictionFormFilled-ApplictionFormFilled', 'ApplictionFormFilled-ApplicationSubmitted', 'ApplicationSubmitted-RequestArrivedInOffice', 'RequestArrivedInOffice-FormPrinted', 'RequestArrivedInOffice-ApplictionRejectedByOffice', 'FormPrinted-FormSigned', 'FormPrinted-ApplictionRejectedByOffice', 'FormSigned-SignedFormArrivedInOffice', 'FormSigned-ApplictionRejectedByOffice', 'SignedFormArrivedInOffice-ApplictionRejectedByOffice', 'SignedFormArrivedInOffice-CertificateCollectedByStudent', 'CertificateCollectedByStudent-RequestFinishedSuccessfully', 'ApplictionRejectedByOffice-RequestFisnishedWithError', 'RequestFinishedSuccessfully-Finish', 'RequestFisnishedWithError-Finish', 'start-ApplicationInitiated', 'ApplicationInitiated-ApplicationFormPartiallyFilld', 'ApplicationFormPartiallyFilled-ApplicationFormPartiallyFilld'];
+
+$scope.counter= 0;
+  $scope.count = function(){
+    $scope.counter++;
+$scope.s=$scope.ststs[$scope.counter];
+  };
+
+
+   });
+
+
+  });     
+     
+</script>
+<label style="padding-left:0px;">search as:<label>
+<input ng-model="fname" style="width:80px;"><br><br>
+      
